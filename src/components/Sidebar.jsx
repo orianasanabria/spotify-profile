@@ -11,7 +11,7 @@ import { NavLink } from "react-router-dom"
 const Sidebar = () => {
   return (
     <aside className="sidebar">
-      <img className="sidebar__logo" src="/logo.svg" />
+      <img className="sidebar__logo" alt="logo" src="/logo.svg" />
       <div className="sidebar__actions">
         <NavLink
           to="/"
@@ -29,7 +29,7 @@ const Sidebar = () => {
         >
           <SidebarLink
             Icon={SettingsBackupRestoreIcon}
-            title="Recent"
+            title="Recently Played"
           />
         </NavLink>
         <NavLink
@@ -54,10 +54,10 @@ const Sidebar = () => {
             isActive ? "sidebar__link sidebar__link-active" : "sidebar__link"
           }
         >
-          <SidebarLink Icon={QueueMusicOutlinedIcon} title="Playlists" />
+          <SidebarLink Icon={QueueMusicOutlinedIcon} title="Your Playlists" />
         </NavLink>
       </div>
-      <img className="sidebar__logo" src="/github.svg" />
+      <img className="sidebar__logo" alt="logo" src="/github.svg" />
     </aside>
   )
 }

@@ -1,6 +1,8 @@
 @use "../abstracts/variables" as v;
 
 .container {
+	height: 100%;
+	min-height: 100vh;
 	&__wrapper {
 		display: flex;
 		height: 100vh;

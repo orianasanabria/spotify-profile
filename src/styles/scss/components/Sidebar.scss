@@ -6,6 +6,10 @@
   color: #fff;
   background-color: v.$background-secondary;
   justify-content: center;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  z-index: 9;
   &__actions {
     width: 100%;
     display: flex;
@@ -35,6 +39,7 @@
     padding: 0.8rem 1.5rem;
   }
   @media screen and (min-width: 991px) {
+    position: inherit;
     flex-direction: column;
     justify-content: space-between;
     padding: 2rem 0;

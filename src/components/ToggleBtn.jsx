@@ -4,28 +4,28 @@ const ToggleBtn = (props) => {
   return (
     <div className="toggleBtn">
       <div className="btn-container">
-        <a
+        <button
           className={props.term === "long_term" ? "btn-active btn" : "btn"}
           onClick={() => props.set_term("long_term")}
         >
           All Time
-        </a>
+        </button>
       </div>
       <div className="btn-container">
-        <a
+        <button
           className={props.term === "medium_term" ? "btn-active btn" : "btn"}
           onClick={() => props.set_term("medium_term")}
         >
           Last 6 Months
-        </a>
+        </button>
       </div>
       <div className="btn-container">
-        <a
+        <button
           className={props.term === "short_term" ? "btn-active btn" : "btn"}
           onClick={() => props.set_term("short_term")}
         >
           Last Month
-        </a>
+        </button>
       </div>
     </div>
   )

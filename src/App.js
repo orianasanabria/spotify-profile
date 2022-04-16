@@ -94,7 +94,7 @@ const App = () => {
         })
       })
     }
-  }, [])
+  }, [dispatch])
 
   return (
     <div className="App">
