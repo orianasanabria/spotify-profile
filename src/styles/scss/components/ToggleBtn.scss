@@ -6,6 +6,10 @@
   gap: 1rem;
 
   .btn {
+		font-family: "DM Sans", "Roboto", "Helvetica Neue", sans-serif;
+		background: none;
+		border: none;
+		outline: none;
 		color: v.$text-subdued;
 		cursor: pointer;
 		transition: all .2s ease-in;
