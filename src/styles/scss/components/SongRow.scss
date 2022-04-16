@@ -1,0 +1,49 @@
+@use "../abstracts/variables" as v;
+
+.songRow {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem 1rem;
+  color: v.$text-subdued;
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  &__trackInfo {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  &__duration {
+    font-size: 0.9em;
+  }
+  &__album {
+    display: none;
+  }
+  &__name {
+    font-size: 1em;
+    font-weight: 500;
+    color: #fff;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  &__artists {
+    font-size: 0.8em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  @media screen and (min-width: 991px) {
+    &__artists {
+      font-size: .9em;
+    }
+    &__trackInfo {
+      width: 50%;
+    }
+    &__album {
+      font-size: .9em;
+      display: block;
+      width: 50%;
+    }
+  }
+}

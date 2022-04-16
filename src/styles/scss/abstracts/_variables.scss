@@ -1,0 +1,94 @@
+// Color Scheme
+$background-secondary: #040404;
+$background-primary: #0c0c0e;
+$gradient-recent: linear-gradient(
+  to right bottom,
+  #2e0051,
+  #560057,
+  #7a005a,
+  #9b0058,
+  #b90052,
+  #c32462,
+  #cd3973,
+  #d64b83,
+  #c66ea5,
+  #b58ab7,
+  #aca0bb,
+  #b2b2b3
+);
+$gradient-artists: linear-gradient(
+  to right top,
+  #000000,
+  #331019,
+  #620f24,
+  #920728,
+  #c20023,
+  #d6242c,
+  #eb3a36,
+  #ff4d40,
+  #fa6b61,
+  #f18580,
+  #e29d9b,
+  #cfb4b4
+);
+$gradient-tracks: linear-gradient(
+  to right bottom,
+  #161616,
+  #27394c,
+  #006780,
+  #00989b,
+  #00c893,
+  #00cb94,
+  #00cf94,
+  #00d295,
+  #00aaa7,
+  #007e9c,
+  #235474,
+  #2e3041
+);
+$gradient-playlists: linear-gradient(
+  to left top,
+  #ff560d,
+  #ff6f16,
+  #ff8524,
+  #ff9834,
+  #ffaa46,
+  #ffb253,
+  #ffba60,
+  #ffc16d,
+  #ffc277,
+  #ffc380,
+  #ffc489,
+  #ffc692
+);
+
+$background-accent: rgb(80, 40, 240);
+$background-base: #121212;
+$background-highlight: #1a1a1a;
+$background-press: #000;
+$background-elevated-base: #242424;
+$background-elevated-highlight: #2a2a2a;
+$background-elevated-press: #000;
+$background-tinted-base: hsla(0, 0%, 100%, 0.07);
+$background-tinted-highlight: hsla(0, 0%, 100%, 0.1);
+$background-tinted-press: hsla(0, 0%, 100%, 0.04);
+$background-unsafe-for-small-text-base: #121212;
+$background-unsafe-for-small-text-highlight: #121212;
+$background-unsafe-for-small-text-press: #121212;
+$text-base: #fff;
+$text-subdued: #a7a7a7;
+$text-accent: #1db954;
+$text-bright-accent: #1ed760;
+$text-negative: #f15e6c;
+$text-warning: #ffa42b;
+$text-positive: #1ed760;
+$text-announcement: #3d91f4;
+$essential-base: #fff;
+$essential-subdued: #727272;
+$essential-bright-accent: #1ed760;
+$essential-negative: #e91429;
+$essential-warning: #ffa42b;
+$essential-positive: #1ed760;
+$essential-announcement: #0d72ea;
+$decorative-base: #fff;
+$decorative-subdued: #292929;

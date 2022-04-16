@@ -1,0 +1,17 @@
+@use "../abstracts/variables" as v;
+
+.toggleBtn {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  .btn {
+		color: v.$text-subdued;
+		cursor: pointer;
+		transition: all .2s ease-in;
+		&-active, &:hover{
+			color: #fff;
+			border-bottom: 1px solid #fff;
+		}
+  }
+}
