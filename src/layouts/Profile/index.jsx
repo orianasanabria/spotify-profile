@@ -1,29 +1,27 @@
 import React from "react"
+import { useDataLayerValue } from "../../context/DataLayer"
 import "../../styles/scss/layout/Layout.scss"
 import "../../styles/scss/layout/Profile.scss"
 
 const Profile = () => {
-  return (
+  const [{ user, playlists }] = useDataLayerValue()
 
+  return (
     <div className="profile">
       <div className="profile__info">
         <img
           className="profile__info__image"
-          src="https://i.scdn.co/image/ab6775700000ee856328693abdd449c8f8a5f3fd"
-          alt=""
+          src={user.images[0].url}
+          alt={user?.display_name}
         />
-        <h1 className="profile__info__name">Oriana</h1>
+        <h1 className="profile__info__name">{user?.display_name}</h1>
         <div className="profile__info__specs">
           <div className="profile__info__specs-data">
-            <h3>8</h3>
+            <h3>{user?.followers.total}</h3>
             <p>Followers</p>
           </div>
           <div className="profile__info__specs-data">
-            <h3>20</h3>
-            <p>Following</p>
-          </div>
-          <div className="profile__info__specs-data">
-            <h3>93</h3>
+            <h3>{playlists?.total}</h3>
             <p>Playlists</p>
           </div>
         </div>

@@ -30,13 +30,15 @@ const App = () => {
         })
       })
 
-      s.getUserPlaylists().then((playlists) => {
+      s.getUserPlaylists({
+        'limit': 100
+      }).then((playlists) => {
         dispatch({
           type: "SET_PLAYLISTS",
           playlists,
         })
       })
-      
+
       s.getMyRecentlyPlayedTracks().then((recentlyPlayed) => {
         dispatch({
           type: "SET_RECENTLYPLAYED",
