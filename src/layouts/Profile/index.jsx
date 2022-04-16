@@ -11,7 +11,7 @@ const Profile = () => {
       <div className="profile__info">
         <img
           className="profile__info__image"
-          src={user.images[0].url}
+          src={user?.images[0].url}
           alt={user?.display_name}
         />
         <h1 className="profile__info__name">{user?.display_name}</h1>
